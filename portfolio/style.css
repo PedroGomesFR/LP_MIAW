@@ -1,0 +1,63 @@
+body {
+    background-color: var(--black);
+    color: white;
+}
+:root {
+    --black: #131313;
+}
+
+* {
+    color: inherit;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.titre {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.aligne-center {
+    align-items: center;
+}
+.presentation {
+    max-width: 500px;
+}
+.competances {
+    text-align: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.gap-comp {
+    gap: 12px;
+}
+
+.flex-direction-colums {
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+.gt-col-2 {
+    grid-template-columns: repeat(2,1fr);
+
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 769px) {
+    .gt-col-2 {
+        grid-template-columns: repeat(1,1fr);
+
+    }
+}
