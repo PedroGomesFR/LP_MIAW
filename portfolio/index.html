@@ -4,14 +4,12 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" type="text/css" href="style.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin="crossorigin">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-            rel="stylesheet">
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script
+            nomodule="nomodule"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <title>Pedro Gomes</title>
     </head>
     <body>
@@ -19,14 +17,24 @@
             <div class="flex justify-center">
                 <h1>Pedro Gomes</h1>
             </div>
-            
+
+            <div class="flex justify-center topPadding gap-comp">
+                <a href="https://www.linkedin.com/in/pedro-gomes-33200821b/" target="_blank">
+                    <ion-icon name="logo-linkedin" size="large"></ion-icon>
+                </a>
+                <a href="https://github.com/PedroGomesFR" target="_blank">
+                    <ion-icon name="logo-github" size="large"></ion-icon>
+                </a>
+            </div>
         </header>
 
-        <div class="flex justify-center">
+        <div class="flex justify-center topPadding">
             <p class="presentation">
-                Bonjour et bienvenue, je m'appelle Pedro jai 20ans je suis Etudiant a l'IUT
-                d'evry en devlopement WEB fullstack en alternance, actuelement en recherche
-                d'entreprise, voici mon
+                Bonjour et bienvenue, je m'appelle Pedro, j'ai 20 ans et je suis étudiant en
+                Licence Professionnelle à
+                <a href="https://www.iut-evry.fr">l'IUT d'Évry</a>, spécialisé en développement
+                web fullstack en alternance. Je suis actuellement à la recherche d'une
+                entreprise, voici mon
                 <a href="/CVetLDM/cvPedroGomes.pdf" target="_blank">CV</a>
                 et ma
                 <a href="/CVetLDM/ldmPedroGomes.pdf" target="_blank">Letre de motivation</a>
@@ -37,7 +45,7 @@
             <h2>mes competances :
             </h2>
         </div>
-        <div class="flex flex-wrap gap-comp justify-center">
+        <div class="flex flex-wrap gap-comp justify-center topPadding">
             <div>HTML</div>
             <div>CSS</div>
             <div>PHP</div>
@@ -50,28 +58,66 @@
             <div>Photoshop</div>
         </div>
 
-        <div class="flex justify-center">
+        <div class="flex justify-center topPadding">
             <h2>Mes Projets :</h2>
         </div>
-        <div class="flex justify-center">
+        <div class="flex justify-center topPadding">
             Projet de fin année de BTS 2024 : casque de chantier connecté avec plusiers
             capteurs (GPS, Temperature, humiditée et taux de gaz) avec un site de monitoring
             pour le chez de chantier</br>
     </div>
 </br>
-<div class="grid gt-col-2 gap-comp">
+<div class="grid gt-col-2 gap-comp topPadding">
     <div><img src="/images/Casque.PNG"></div>
     <div><img src="/images/site.png"></div>
 </div>
 
-<div class="flex justify-center">
-    <p>Mes taches :</p>
+<div class="taches flex justify-center topPadding">
+    <p id="mesTaches">Mes taches :</p>
 
-    <ul>
-        <li>Capteur GPS</li>
-        <li>creation du site de monitoring</li>
-        <li>transmission et stackage des donnes des capteurs</li>
-    </ul>
+    <ol type="1">
+        <li>
+            Coder, tester et valider un module logiciel pour :
+            <ol type="A">
+                <li>
+                    L'obtention des coordonnées GPS.
+                </li>
+            </ol>
+        </li>
+        <li>
+            Installer et configurer le réseau Wifi fermé.
+        </li>
+        <li>
+            transmission et stockage des donnes des capteurs
+        </li>
+        <li>
+            Coder, tester et valider un module logiciel permettant :
+            <ol type="A">
+                <li>
+                    D'obtenir les coordonnées GPS
+                </li>
+                <li>
+                    De décoder les informations reçues du casque de chantier
+                </li>
+                <li>
+                    D'obtenir une base de données centralisant toutes les informations sur le
+                    porteur de casque
+                </li>
+                <li>
+                    De créer un site web permettant la gestion des porteurs de casques,</br>
+                incluant des fonctionnalités telles que le suivi des coordonnées GPS,</br>
+            la détection de gaz dangereux et les niveaux de température
+        </li>
+    </ol>
+</li>
+</ol>
+</div>
+
+<div class="flex justify-center topPadding">
+<p>
+Mon<a href="/CVetLDM/Rapport_de_Projet.pdf" target="_blank">
+    Rapport_de_Projet</a>
+(Etudiant 3)</p>
 </div>
 
 </body>

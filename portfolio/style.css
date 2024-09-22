@@ -1,5 +1,5 @@
 body {
-    background-color: var(--black);
+    background-image: url("/images/bg.jpg");
     color: white;
     font-family: "Inria Sans", sans-serif;
     font-weight: 400;
@@ -29,7 +29,7 @@ body {
     align-items: center;
 }
 .presentation {
-    max-width: 500px;
+    max-width: 600px;
 }
 .competances {
     text-align: center;
@@ -65,3 +65,18 @@ img {
     }
 }
 
+.text-aligne{
+    text-align: center;
+}
+
+.textPadding{
+    padding: 5px;
+}
+
+.taches li{
+    padding: 3px;
+}
+
+.topPadding{
+padding-top: 20px;
+}
