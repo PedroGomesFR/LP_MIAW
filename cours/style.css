@@ -1,0 +1,10 @@
+.tab1:hover{
+    text-align: center;
+    font-weight: bolder;
+    background-color: #1a86b8;
+}
+.tab2:hover{
+    text-align: center;
+    font-weight: bolder;
+    background-image: url(images/sideR_1a.jpg);
+}
