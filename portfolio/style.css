@@ -147,3 +147,8 @@ p {
       }
 }
 
+.presentations {
+    text-align: center; /* Ensures text inside the div is centered */
+    max-width: 70%; /* Sets a maximum width for the div */
+    margin: 0 auto; /* Centers the div itself within its parent */
+}
