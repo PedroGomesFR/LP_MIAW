@@ -102,7 +102,7 @@ while i <= 10 :
     print(i)
     i += 1 
 
-"""
+
 
 def prix_cat_jours(catégorie) : 
     if catégorie == "A":
@@ -132,6 +132,46 @@ catégorie = str(input("entre la categorie du vheicule shouaitée A, B, C ou D :
 jours = int(input("entre le nombre de jours de location : "))
 
 prixcj = prix_cat_jours(catégorie) * jours
+
+rep = str(input("Voulez vous des options ? (oui ou non) : "))
+
+if rep == "oui" :
+    options = str(input("OK! ont a plussieurs options : GPS, Sièges bébé ou Assurence tout risque : "))
+    prix = prix_options(options) * prixcj
+    rep2 = str(input("voulez vous encore des options ? : "))
+    while rep2 == "oui" :
+        options = str(input("OK! ont a plussieurs options : GPS, Sièges bébé ou Assurence tout risque : "))
+        prix = prix_options(options) * prix
+        rep2 = str(input("voulez vous encore des options ? : "))
+    print("Votre totale est de : ", prix)  
+else : 
+    print("Votre totale est de : ", prixcj)
+
+"""
+def prix_cat_jours(catégorie):
+    categories = {"A": 50, "B": 70, "C": 80, "D": 150}
+    return categories.get(catégorie.upper(), 0)
+
+def prix_options(option):
+    options = {"GPS": 8, "Sièges bébé": 5, "Assurance tout risque": 19}
+    return options.get(option, 0)
+
+catégorie = input("Entrez la catégorie du véhicule souhaitée (A, B, C ou D) : ").upper()
+jours = int(input("Entrez le nombre de jours de location : "))
+
+prix_total = prix_cat_jours(catégorie) * jours
+
+while input("Voulez-vous ajouter des options ? (oui/non) : ").lower() == 'oui':
+    print("Options disponibles : GPS, Sièges bébé, Assurance tout risque")
+    option = input("Quelle option voulez-vous ajouter ? ")
+    prix_option = prix_options(option)
+    if prix_option:
+        prix_total += prix_option * jours
+        print(f"Option '{option}' ajoutée pour {prix_option}€ par jour.")
+    else:
+        print("Option non reconnue.")
+
+print(f"Votre total est de : {prix_total}€")
 
 
 
