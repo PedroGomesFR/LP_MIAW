@@ -36,9 +36,9 @@ age = int(input("Entrez votre âge : "))
 # Vérifier la catégorie d'âge
 if age < 12:
     print("Catégorie : Enfant")
-elif 12 <= age <= 17:
+elif age <= 17:
     print("Catégorie : Adolescent")
-elif 18 <= age <= 64:
+elif age <= 64:
     print("Catégorie : Adulte")
 else:
     print("Catégorie : Senior")
@@ -95,9 +95,48 @@ if date_valide(jour, mois, annee):
 else:
     print(f"La date {jour}/{mois}/{annee} n'est pas valide.")
 
-"""
+
 
 i = 0
-while i <= 10:
+while i <= 10 :
     print(i)
     i += 1 
+
+"""
+
+def prix_cat_jours(catégorie) : 
+    if catégorie == "A":
+        return 50
+    elif catégorie == "B":
+        return 70
+    elif catégorie == "C":
+        return 80
+    elif catégorie == "D":
+        return 150
+    else :
+        return 0
+
+def prix_options(options) :
+    if options == "GPS" :
+        return 8
+    elif options == "Siéges bébé" :
+        return 5
+    elif options == "Assurence tout risque" :
+        return 19
+    else :
+        return 0
+
+
+
+catégorie = str(input("entre la categorie du vheicule shouaitée A, B, C ou D : "))
+jours = int(input("entre le nombre de jours de location : "))
+
+prixcj = prix_cat_jours(catégorie) * jours
+
+
+
+
+
+
+
+
