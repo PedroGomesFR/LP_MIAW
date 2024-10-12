@@ -1,0 +1,85 @@
+
+.gaz{
+    font-size: xx-large;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: lightgray;
+    max-width: 370px;
+}
+
+.gazd{
+    font-size: xx-large;
+    padding: 5px;
+    background-color: lightgray;
+    max-width: 370px;
+    color: red;
+}
+
+.temp{
+    font-size: xx-large;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: lightgray;
+    max-width: 370px;     
+}
+
+.tempd{
+    font-size: xx-large;
+    padding: 5px;
+    background-color: lightgray;
+    max-width: 370px; 
+    color: red;
+}
+
+.ouvriers{
+    text-align: left;
+    font-size: larger;
+}
+
+.moni{
+    text-align: center;
+    padding: 5px;
+    background-color: grey;
+}
+
+.notif{
+    position: relative; 
+    color: red;
+    font-size: xx-large;
+}
+
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blink {
+    animation: blink 0.7s infinite;
+}
+
+.imgcasque img{
+    float: right;
+    margin-right: 350px;
+    height: 450px;
+    width: 450px;
+
+}
+
+.capteur{
+    padding: 10px;
+    margin-top: 20px;
+}
+ouvriers.indexcasque1{
+    margin-top: 10px;
+} 
+
+ouvriers.indexcasque2{
+    margin-top: 10px;
+} 
+
+ouvriers.indexcasque3{
+    margin-top: 10px;
+} 
+
