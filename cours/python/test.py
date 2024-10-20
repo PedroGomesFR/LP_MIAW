@@ -131,6 +131,8 @@ def prix_options(options) :
 catégorie = str(input("entre la categorie du vheicule shouaitée A, B, C ou D : "))
 jours = int(input("entre le nombre de jours de location : "))
 
+
+
 prixcj = prix_cat_jours(catégorie) * jours
 
 rep = str(input("Voulez vous des options ? (oui ou non) : "))
