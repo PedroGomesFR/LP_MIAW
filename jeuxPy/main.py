@@ -17,6 +17,11 @@ GRAVITY = 0.5
 #variable d'action du jouer
 moving_left = False
 moving_right = False
+shoot = False
+
+#load img
+#balles
+bullet_img = pygame.image.load("images/icons/bullet.png").convert_alpha()
 
 #couleur du font
 BG = (144, 201, 120)
@@ -52,13 +57,13 @@ class Soldier(pygame.sprite.Sprite):
             #numbre de fichier dans un doc
             num_of_frames = len(os.listdir(f'images/{self.char_type}/{animation}'))
             for i in range (num_of_frames):
-                img = pygame.image.load(f'images/{self.char_type}/{animation}/{i}.png')
+                img = pygame.image.load(f'images/{self.char_type}/{animation}/{i}.png').convert_alpha()
                 img = pygame.transform.scale(img, (int(img.get_width() * scale) , (int(img.get_height() * scale) )))
                 temp_list.append(img)
             self.animation_list.append(temp_list)
            
         self.image = self.animation_list[self.action][self.frame_index]
-        self.rect = img.get_rect()
+        self.rect = self.image.get_rect()
         self.rect.center = (x, y)
 
 
@@ -129,6 +134,21 @@ class Soldier(pygame.sprite.Sprite):
     
     def draw(self):
         screen.blit(pygame.transform.flip(self.image, self.flip, False), self.rect)
+
+
+class Bullet(pygame.sprite.Sprite):
+    def __init__(self, x, y, speed, direction):
+        pygame.sprite.Sprite.__init__(self)
+        self.speed = 10
+        self.image = bullet_img
+        self.rect = self.image.get_rect()
+        self.rect.center = (x, y)
+        self.directin = direction
+
+
+#creat sprite group
+bullet_group = pygame.sprite.Group()
+
     
             
 
@@ -150,8 +170,18 @@ while run :
     enemy.update_animation()
     enemy.draw()
 
+
+    #update and draw bullet
+    bullet_group.update()
+    bullet_group.draw(screen)
+
     #update player actions
     if player.alive:
+        #shoot bullets
+        if shoot:
+            bullet = Bullet(player.rect.centerx, player.rect.centery,10 , player.direction)
+            bullet_group.add(bullet)
+            shoot = False
         if player.in_air:
             player.update_action(2)#jump
         elif moving_left or moving_right :
@@ -173,14 +203,20 @@ while run :
                 moving_left = True
             if event.key == pygame.K_d:
                 moving_right = True
+            if event.key == pygame.K_SPACE:
+                shoot = True
             if event.key == pygame.K_z and player.alive:
                 player.jump = True
+
         #keyboard release
         if event.type == pygame.KEYUP:      
             if event.key == pygame.K_q:
                 moving_left = False
             if event.key == pygame.K_d:
                 moving_right = False
+            if event.key == pygame.K_SPACE:
+                shoot = False
+            
 
 
 
