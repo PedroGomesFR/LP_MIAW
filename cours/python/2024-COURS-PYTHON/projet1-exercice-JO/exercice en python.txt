@@ -1,0 +1,22 @@
+1) charger le fichier csv dans un dataframe
+
+en utilisant Pandas et matplotlib
+
+2.1) dessinez par année le nombre de sportifs
+2.2) idem en séparant H/F
+2.3) faire 2 graphiques : un pour les jeux d'hiver, l'autre pour les jeu d'été
+
+3.1) affichez les 6 nations qui cumulent le + de médailles
+3.2) affichez les 6 nations qui cumulent le + de médailles depuis 1960
+3.3) affichez les 6 nations qui cumulent le + de médailles uniquement pour les jeux d'hiver
+
+4) Pour les 6 nations qui ont le plus de médailles (un trait de couleur par nation), dessinez par année le nombre de médailles obtenues
+
+5) imaginez d'autres graphiques
+5.1) les atlètes qui ont obtenus le + de médailles (afficher le 10 1er)
+5.2) les altlètes qui ont eu des médailles dans le + de jeux différents (afficher les 10 premiers)
+
+ps : vous pouvez faire la même chose en excel.
+
+
+
