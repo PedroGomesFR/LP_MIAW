@@ -13,16 +13,9 @@
         <title>Pedro Gomes</title>
     </head>
     <body>
-        <header>
-            <main class="container">
-                <p><H5>Bonjour 👋 Je suis</H5></p>
-                <section class="animation">
-                  <div class="first"><div>Pedro</div></div>
-                  <div class="second"><div>Dévloppeur Web</div></div>
-                </section>
-              </main>
-
-            <div class="logo1 flex justify-center topPadding gap-comp">
+        <div id="Accueil"></div>
+        <header class="flex justify-between items-center">
+            <div class="liens1 flex gap-comp">
                 <a href="https://www.linkedin.com/in/pedro-gomes-33200821b/" target="_blank">
                     <ion-icon name="logo-linkedin" size="large"></ion-icon>
                 </a>
@@ -30,18 +23,43 @@
                     <ion-icon name="logo-github" size="large"></ion-icon>
                 </a>
             </div>
+        
+            <main class="container">
+                <p>
+                    <h5>Bonjour 👋 Je suis</h5>
+                </p>
+                <section class="animation">
+                    <div class="first">
+                        <div>Pedro</div>
+                    </div>
+                    <div class="second">
+                        <div>Dévloppeur Web</div>
+                    </div>
+                </section>
+            </main>
+        
+            <div class="liens2 flex gap-comp">
+                <a href="#Accueil">Accueil</a>
+                <a href="#Parcours">Parcours</a>
+                <a href="#Competances">Compétances</a>
+                <a href="#Projets">Projets</a>
+                <a href="#Contact">Contact</a>
+            </div>
         </header>
 
-        <div class=" logo1 flex justify-center topPadding">
+        <div class=" logo1 flex justify-center topPadding" id="Accueil">
             <p class="presentation">
-                Bonjour et bienvenue, je m'appelle Pedro Gomes, j'ai 20 ans et je suis étudiant en
-                Licence Professionnelle à
-                <a href="https://www.iut-evry.fr">l'IUT d'Évry</a>, spécialisé en développement
-                web fullstack en alternance. 
+                Bonjour et bienvenue, je m'appelle Pedro Gomes, j'ai 20 ans et je suis
+                actuelmenet étudiant à
+                <a href="https://www.iut-evry.fr">l'IUT d'Évry</a>
+                en Licence Professionnelle, " MIAW spécialité DAWII " Metier de l'informatique
+                application WEB spécialité Devloppement application web intranet et internet .
             </p>
         </div>
 
-        <div class="flex justify-center">
+        <div class="" id="Parcours"></div>
+
+        <div class="flex justify-center" id="Competances">
             <h2>mes competances :
             </h2>
         </div>
@@ -57,7 +75,7 @@
             <div>Linux</div>
         </div>
 
-        <div class="flex justify-center topPadding">
+        <div class="flex justify-center topPadding" id="Projets">
             <h2>Mes Projets :</h2>
         </div>
         <div class="flex justify-center topPadding">
@@ -112,15 +130,17 @@
 </ol>
 </div>
 
-<h2><p class="flex justify-center">Mise en scène :</p></h2>
+<h2>
+<p class="flex justify-center">Mise en scène :</p>
+</h2>
 
 <div class="presentations">
-L'ouvrier arrive sur le chantier et allume le casque. Dès que le casque est activé, 
-l'Arduino auquel il est connecté commence à envoyer les données récupérées à la base 
-de données installée sur le poste du chef de chantier. Celui-ci, depuis son site de 
-monitoring, peut visualiser toutes les données, comme illustré par l'image ci-dessus.
+L'ouvrier arrive sur le chantier et allume le casque. Dès que le casque est
+activé, l'Arduino auquel il est connecté commence à envoyer les données
+récupérées à la base de données installée sur le poste du chef de chantier.
+Celui-ci, depuis son site de monitoring, peut visualiser toutes les données,
+comme illustré par l'image ci-dessus.
 </div>
-
 
 <div class="flex justify-center topPadding">
 <p>
@@ -129,8 +149,10 @@ Le<a href="./CVetLDM/Rapport_de_Projet.pdf" target="_blank">
 (Etudiant 3)</p>
 </div>
 
-<div class="flex justify-center">
-<p>Vous pouvez me contacter par Email : <a href="mailto:pedrogomeslycee@gmail.com">pedrogomeslycee@gmail.com</a> ou par téléphone : +33 07 83 73 62 85</p>
+<div class="flex justify-center" id="Contact">
+<p>Vous pouvez me contacter par Email :
+<a href="mailto:pedrogomeslycee@gmail.com">pedrogomeslycee@gmail.com</a>
+ou par téléphone : +33 07 83 73 62 85</p>
 </div>
 </body>
 

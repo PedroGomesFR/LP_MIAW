@@ -21,7 +21,7 @@ shoot = False
 
 #load img
 #balles
-bullet_img = pygame.image.load("images/icons/bullet.png").convert_alpha()
+bullet_img = pygame.image.load("C:/Users/pedro/Documents/LP_MIAW/jeuxPy/images/icons/bullet.png").convert_alpha()
 
 #couleur du font
 BG = (144, 201, 120)
@@ -55,9 +55,9 @@ class Soldier(pygame.sprite.Sprite):
             #reset les images animation
             temp_list = []
             #numbre de fichier dans un doc
-            num_of_frames = len(os.listdir(f'images/{self.char_type}/{animation}'))
+            num_of_frames = len(os.listdir(f'C:/Users/pedro/Documents/LP_MIAW/jeuxPy/images/{self.char_type}/{animation}'))
             for i in range (num_of_frames):
-                img = pygame.image.load(f'images/{self.char_type}/{animation}/{i}.png').convert_alpha()
+                img = pygame.image.load(f'C:/Users/pedro/Documents/LP_MIAW/jeuxPy/images/{self.char_type}/{animation}/{i}.png').convert_alpha()
                 img = pygame.transform.scale(img, (int(img.get_width() * scale) , (int(img.get_height() * scale) )))
                 temp_list.append(img)
             self.animation_list.append(temp_list)

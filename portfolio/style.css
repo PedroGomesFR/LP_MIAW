@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-image: url("./images/bg.jpg");
     color: white;
@@ -11,6 +14,24 @@ body {
 
 * {
     color: inherit;
+}
+
+header {
+    background-color: #041620;
+    position: sticky;
+    top:0;
+}
+
+header main{
+    display: inline-block;
+}
+
+header.lien1{
+    display: inline-block;
+}
+
+header.lien2{
+    display: inline-block;
 }
 
 .justify-center {
@@ -156,3 +177,20 @@ p {
     max-width: 70%; /* Sets a maximum width for the div */
     margin: 0 auto; /* Centers the div itself within its parent */
 }
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-comp {
+    gap: 1rem; /* Ajustez selon vos besoins */
+}
+

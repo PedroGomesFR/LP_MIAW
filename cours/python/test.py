@@ -149,7 +149,7 @@ if rep == "oui" :
 else : 
     print("Votre totale est de : ", prixcj)
 
-"""
+
 def prix_cat_jours(catégorie):
     categories = {"A": 50, "B": 70, "C": 80, "D": 150}
     return categories.get(catégorie.upper(), 0)
@@ -178,7 +178,54 @@ print(f"Votre total est de : {prix_total}€")
 
 
 
+malist = int(input("entrez des nombres : "))
 
 
+"""
 
 
+import tkinter as tk
+from cx_Freeze import setup, Executable
+import sys
+
+# Définir les options de cx_Freeze
+options = {
+    'build_exe': {
+        'includes': ['tkinter'],
+        'include_files': ['assets/']
+    }
+}
+
+# Définir le point d'entrée de l'application
+base = None
+if sys.platform == "win32":
+    base = "Win32GUI"
+
+setup(
+    name="Ma super application Tkinter",
+    version="1.0",
+    description="Une application créée avec Tkinter et cx_Freeze",
+    options=options,
+    executables=[Executable("app.py", base=base)]
+)
+
+# Crée la fenêtre principale
+root = tk.Tk()
+root.title("Mon application Tkinter")
+
+# Crée un label
+label = tk.Label(root, text="Bienvenue dans mon application!")
+label.pack()
+
+root.geometry("800x600")
+
+# Crée un bouton
+def on_click():
+    label.config(text="Vous avez cliqué sur le bouton!")
+    
+
+button = tk.Button(root, text="Cliquez ici", command=on_click)
+button.pack()
+
+# Lance la boucle principale
+root.mainloop()
