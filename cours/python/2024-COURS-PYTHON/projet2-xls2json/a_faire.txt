@@ -1,0 +1,11 @@
+faire un programme python avec un bouton qui permet de charger un fichier excel.
+
+Ce fichier excel permettra de générer un fichier json.
+
+Le champ "CleWeb" indique un numéro incrémental avec la date suivi d'un nombre...
+
+
+les autres champs sont issus du fichier excel.
+
+ps : votre outils permettra demandera à l'utilisateur de sauver le fichier excel dans son arborescence (par défaut, dans le dossier "Documents" de l'utilisateur).
+
