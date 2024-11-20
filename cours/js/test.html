@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script language="javascript">
+            function validermail(formulaire) {
+                if (formulaire.mail.value.indexof("@", 3) < 0) {
+                    alert("adresse mail saisie invalide.\n");
+                    // le formulaire ne sera pas validé
+                } else {
+                    alert("formulaire ok\n");
+                    // pour valider le formulaire en javascript :
+                    formulaire.submit();
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="coordonnees" action="http://www.google.fr">
+            saisissez une adresse mail valide (nom@domaine) :
+            <input type="text" name="mail">
+            <input type="button" name="bouton" value="valide" onclick="validermail(this.form)">
+        </form>
+    </body>
+</html>
