@@ -1,0 +1,86 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.titreHeader {
+    padding: 10px;
+    background-color: rgb(217, 178, 111);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.Textes {
+    padding: 10px;
+    background-color: rgb(0, 160, 53);
+    color: white;
+    flex: 1;
+    width: 77%;
+}
+
+.mainText {
+    padding-bottom: 20px;
+}
+
+.liens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: red;
+    padding: 10px;
+    width: 20%;
+    height: auto;
+}
+
+.liens a {
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+}
+
+.lien2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(89, 122, 162);
+    padding: 10px;
+    width: 77%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .Textes,
+    .liens,
+    .lien2 {
+        width: 100%;
+        margin: 0; 
+    }
+
+    .liens {
+        flex-direction: row; 
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    .liens a {
+        margin: 0 10px; 
+    }
+}

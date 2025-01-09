@@ -1,0 +1,10 @@
+.Btns{
+    display: flex;
+   text-align: center;
+   
+}
+
+.Btns div{
+    border: 1px solid black;
+    padding: 5px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TD4.css">
+    <script src="TD4.js" language="JavaScript"></script>
+    <title>TD4</title>
+</head>
+<body>
+
+
+    Nom: 
+    <input type="text" name="nom" id="nom">
+
+    Prénom: 
+    <input type="text" name="prenom" id="prenom">
+
+    Mot de passe:
+    <input type="password" name="password" id="password"> <br>
+
+    <br> <br>
+
+    vous etes en terminale S dominant 
+    
+    <input type="radio" name="spe" value="Math">
+    <label for="math">Mathematique</label>
+
+    <input type="radio" name="spe" value="Physique">
+    <label for="terminaleS">Physique-chemie</label>    
+
+    <br> <br>
+
+    Quelle est votre dicipline preferé
+
+    <select name="dicipline">
+        <option value="Informatique">Informatique</option>
+        <option value="Philosophie">Philosophie</option>
+        <option value="Mathematique">Mathematique</option>
+    </select>
+
+    <br> <br>
+
+    Vous vous etes inscrit(e)s en : <br>
+
+    <input type="checkbox" name="deug" id="inscrit">
+    <label for="deug">Deug 1ère année</label>
+
+    <input type="checkbox" name="préparatoire" id="inscrit">
+    <label for="préparatoire">Class préparatoire </label>
+
+    <input type="checkbox" name="TS" id="inscrit">
+    <label for="TS">Section de T.S.</label>
+
+    <input type="checkbox" name="IUT" id="inscrit">
+    <label for="IUT">IUT</label>
+
+    <input type="checkbox" name="Autre" id="inscrit">
+    <label for="Autre">Autre</label>
+
+    <br><br>
+
+    Ecriver ci-dessous le sujet de votre projet Informatique :
+<br>
+    <textarea name="sujet" id="sujet" rows="10" cols="50">
+
+    </textarea>
+
+    <br>
+    <br>
+
+    <div class="Btns">
+        <div class="valid">
+            <p>valider ces information</p>
+            <input type="button" value="Enregistrer" onclick="traiter_info()">
+        </div>
+        <div class="valid">
+            <p>Recomencer les saisie</p>
+            <input type="button" value="Effacer" onclick="effacer()">
+        </div>
+        <div class="valid">
+            <p>Fermer le Formulaire</p>
+            <input type="button" value="Fermer" onclick="fermer()">
+        </div>
+    </div>
+
+</body>
+</html>

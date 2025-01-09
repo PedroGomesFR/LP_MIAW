@@ -1,0 +1,39 @@
+objectif : faire un programme en python pour créer un trombinoscope
+en 3 étapes :
+- charger la liste des photos
+- charger la liste des étudiants (nom-prénom) avec excel (ou en texte)
+- appuyer sur un bouton pour créer un fichier word...
+
+
+Je vous donne le fichier word que vous modifierez avec python
+- vous le copiez
+- vous le dézippé
+- vous remplacer les photos
+- vous remplacer le texte (avec nom - prénom)
+- vous re-zippé le fichier ".docx"
+
+
+Pour l'interface graphique, je vous laisse le choix
+
+Quelques outils à utiliser :
+- librairie graphique (Tkinter, ou Qt6, ou autre)
+- OpenCv pour travailler les images (cadrer, dimension, reconnaissance des visages pour les centrer)
+- Pillow pour charger les images
+- os et shutil pour sauvegarder les fichiers, ou ouvrir les dossiers
+- zipfile pour dézipper puis zipper le fichier word ".docx"
+
+Attention : le fichier ne doit pas être "trop gros", chaque image sur un trombi doit faire 250 Ko max...
+
+
+conseil :
+Vous pouvez créer des classes si vous voulez
+Je vous suggère de séparer la partie graphiques et la partie traitement
+travaillez avec un environnement virtuel
+Je vous donne un exemple, mais vous faîtes comme vous voulez...
+
+
+
+MERCI de déposer votre projet (1 dossier = 1 projet)
+dans le dossier "rendu-de-projets" (accès en écriture)
+
+Bon courage
