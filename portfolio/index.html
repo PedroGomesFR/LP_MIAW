@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Pedro Gomes</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pin_drop" />
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</head>
-<body class="bg-dark text-light">
-    <header class="container py-4 d-flex flex-column align-items-center">
+@@ -15,29 +15,29 @@
         <h1 class="text-warning centerTitre">PG</h1>
         <nav>
             <ul class="nav">
@@ -19,12 +12,17 @@
                 <li class="nav-item"><a href="#Parcours" class="nav-link text-light" data-text="Parcours">Parcours</a></li>
                 <li class="nav-item"><a href="#Competences" class="nav-link text-light" data-text="Compétences">Compétences</a></li>
                 <li class="nav-item"><a href="#Projets" class="nav-link text-light" data-text="Projets">Projets</a></li>
+                <li class="nav-item"><a href="#Home" class="nav-link text-light" data-text="Home">Home</a></li>
+                <li class="nav-item"><a href="#Background" class="nav-link text-light" data-text="Background">Background</a></li>
+                <li class="nav-item"><a href="#Skills" class="nav-link text-light" data-text="Skills">Skills</a></li>
+                <li class="nav-item"><a href="#Projects" class="nav-link text-light" data-text="Projects">Projects</a></li>
                 <li class="nav-item"><a href="#Contact" class="nav-link text-light" data-text="Contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <section id="Accueil" class="container text-center py-5">
+    <section id="Home" class="container text-center py-5">
         <h2 class="text-warning">Pedro Gomes</h2>
         <p class="presentation">
             Bonjour et bienvenue, je m'appelle Pedro Gomes, j'ai 20 ans et je suis actuellement étudiant à
@@ -33,64 +31,55 @@
             (Métiers de l’Informatique - Applications Web, spécialité Développement d’Applications Web Intranet et Internet).
             Passionné par la programmation et les objets connectés (IoT), j’aime voir un projet se construire petit à petit. 
             Je suis également très enthousiaste à l'idée de découvrir et d’explorer les nouvelles technologies.
+            Hello and welcome, my name is Pedro Gomes, I am 20 years old and I am currently a student at
+            <a href="https://www.iut-evry.fr">IUT d'Évry</a> in 
+            Professional License MIAW - DAWII specialty 
+            (IT Professions - Web Applications, specialty Development of Web Intranet and Internet Applications).
+            Passionate about programming and connected objects (IoT), I love seeing a project come together little by little. 
+            I am also very enthusiastic about discovering and exploring new technologies.
         </p>
     </section>
 
     <section id="Competences" class="container py-5">
         <h3 class="text-center text-warning">Mes Compétences</h3>
+    <section id="Skills" class="container py-5">
+        <h3 class="text-center text-warning">My Skills</h3>
         <div class="row text-center mt-4">
             <div class="col-md-3 col-sm-6 p-3 border">HTML</div>
             <div class="col-md-3 col-sm-6 p-3 border">CSS</div>
-            <div class="col-md-3 col-sm-6 p-3 border">JavaScript</div>
-            <div class="col-md-3 col-sm-6 p-3 border">PHP</div>
-            <div class="col-md-3 col-sm-6 p-3 border">MySql</div>
-            <div class="col-md-3 col-sm-6 p-3 border">Flutter</div>
-            <div class="col-md-3 col-sm-6 p-3 border">Python</div>
-            <div class="col-md-3 col-sm-6 p-3 border">C++</div>
-        </div>
+@@ -51,7 +51,7 @@ <h3 class="text-center text-warning">Mes Compétences</h3>
     </section>
 
     <div class="container py-5">
         <h2 class="text-center mb-4 text-warning">Mes Diplômes et Formations</h2>
-        
+        <h2 class="text-center mb-4 text-warning">My Degrees and Training</h2>
+
         <div class="row">
             <div class="col-md-4">
-                <div class="card bg-secondary text-light mb-3">
-                    <div class="card-body">
-                       <h5 class="card-title">
-                            <span class="material-symbols-outlined">
+@@ -62,7 +62,7 @@ <h5 class="card-title">
                                 pin_drop
                             </span>
                             Lycée Professionnel Gourdou Leseurre</h5>
                         <p class="card-text"><strong>Baccalauréat professionnel Système Numérique option C</strong></p>
+                        <p class="card-text"><strong>Professional Baccalaureate in Digital Systems option C</strong></p>
                         <span class="badge bg-primary">2021 - 2022</span>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card bg-secondary text-light mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <span class="material-symbols-outlined">
+@@ -76,7 +76,7 @@ <h5 class="card-title">
                                 pin_drop
                             </span>
                             Lycée Diderot</h5>
                         <p class="card-text"><strong>BTS Système numérique informatique et réseau</strong></p>
+                        <p class="card-text"><strong>BTS Digital Systems IT and Network</strong></p>
                         <span class="badge bg-primary">2022 - 2024</span>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card bg-secondary text-light mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <span class="material-symbols-outlined">
+@@ -90,33 +90,33 @@ <h5 class="card-title">
                                 pin_drop
                             </span>
                             IUT d'Évry Val d’Essonne - CFA EVE</h5>
                         <p class="card-text"><strong>Licence Pro Métiers de l’informatique - Applications Web</strong></p>
+                        <p class="card-text"><strong>Professional License IT Professions - Web Applications</strong></p>
                         <span class="badge bg-primary">2024 - 2025</span>
                     </div>
                 </div>
@@ -99,44 +88,44 @@
     </div>
 
     <section id="Projets" class="container py-5">
+    <section id="Projects" class="container py-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <h2 class="text-center text-warning">Mes Projets</h2>
+                <h2 class="text-center text-warning">My Projects</h2>
                 <div class="card bg-secondary text-light mb-3">
                     <div class="card-body">
                         <h5 class="card-title">Casque de Chantier Connecté</h5>
+                        <h5 class="card-title">Connected Construction Helmet</h5>
                         <p class="card-text">
                             Projet de fin d'année de BTS réalisé en 2024. Ce projet consistait à développer un casque de chantier connecté avec les fonctionnalités suivantes :
+                            End-of-year BTS project completed in 2024. This project consisted of developing a connected construction helmet with the following features:
                         </p>
                         <ul>
                             <li>Développement de la partie GPS pour la localisation du porteur.</li>
                             <li>Création d'un site de monitoring.</li>
                             <li>Gestion d'une base de données pour le transfert des données des capteurs (gaz, température, humidité).</li>
+                            <li>Development of the GPS part for the location of the wearer.</li>
+                            <li>Creation of a monitoring site.</li>
+                            <li>Management of a database for the transfer of sensor data (gas, temperature, humidity).</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <!-- Ajoutez d'autres projets ici -->
+            <!-- Add other projects here -->
         </div>
     </section>
 
-    <div class="container gapping" id="Contact">
-            <div class="text-warning text-center gapping">
-                <h2>Contact</h2>
-            </div>
-        <div class="link_nav">
-            <div class="text-center"> 
-                <a href="Pedrogomeslycee@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
-                <a href="https://www.linkedin.com/in/pedro-gomes-33200821b/"><ion-icon name="logo-linkedin"></ion-icon></a>
-                <a href="https://github.com/PedroGomesFR"><ion-icon name="logo-github"></ion-icon></a>
-            </div>
-        </div>
+@@ -134,9 +134,9 @@ <h2>Contact</h2>
     </div>
 
     <footer class="text-center py-4 bg-black text-light">
         <p>&copy; 2025 Pedro Gomes - Tous droits réservés.</p>
+        <p>&copy; 2025 Pedro Gomes - All rights reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>
 </html>
