@@ -1,196 +1,120 @@
-html{
-    scroll-behavior: smooth;
-}
-body {
-    background-image: url("./images/bg.jpg");
-    color: white;
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 500;
-    font-size:larger;
-}
-:root {
-    --black: #131313;
-}
+/* Bootstrap Overrides & Custom Styles */
 
-* {
-    color: inherit;
-}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-header {
-    background-color: #041620;
-    position: sticky;
-    top:0;
-}
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 
-header main{
-    display: inline-block;
-}
-
-header.lien1{
-    display: inline-block;
-}
-
-header.lien2{
-    display: inline-block;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.titre {
-    text-align: center;
-}
-
-.flex {
-    display: flex;
-}
-
-.aligne-center {
-    align-items: center;
-}
-.presentation {
-    max-width: 600px;
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-.gap-comp {
-    gap: 15px;
-}
-
-.competences div:hover{
-    background-color: rgb(18, 102, 158);
-    border: solid 12px rgb(4, 22, 32);
-    border-radius: 20px;
-    font-weight: bold;
-}
-
-.flex-direction-colums {
-    flex-direction: column;
-}
-
-.grid {
-    display: grid;
-}
-
-.gt-col-2 {
-    grid-template-columns: repeat(2,1fr);
-
-}
-
-img {
-    width: 100%;
-    height: 100%;
-}
-
-@media screen and (max-width: 769px) {
-    .gt-col-2 {
-        grid-template-columns: repeat(1,1fr);
-
+    nav ul li {
+        margin-bottom: 10px;
     }
 }
 
-.text-aligne{
+body {
+    background-color: #131313;
+    color: white;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 500;
+}
+
+.navbar {
+    background-color: #041620;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #20a7d8;
+}
+
+.skills-section {
+    padding: 50px 20px;
     text-align: center;
 }
 
-.textPadding{
-    padding: 5px;
+.skill-item {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #dac8a6;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: bold;
 }
 
-.taches li{
-    padding: 3px;
+.projects-section {
+    padding: 50px 20px;
+    text-align: center;
 }
 
-.topPadding{
-padding-top: 20px;
+.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
-
-p {
-  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+.contact-section {
+    padding: 50px 20px;
+    text-align: center;
 }
 
-.container {
-  color: #e5e5e5;
-  font-size: 2rem;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.contact-info a {
+    color: #20a7d8;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
-
-.animation {
-  height:50px;
-  overflow:hidden;
-  margin-left: 1rem;
+.text-warning{
+    color: #c9bd98;
 }
-
-.animation > div > div {
-  padding: 0.25rem 0.75rem;
-  height: 2.3rem;
-  margin-bottom: 2.81rem;
-  display:inline-block;
-}
-
-.animation div:first-child {
-  animation: text-animation 8s infinite;
-}
-
-.first div {
-  background-color:#20a7d8;
-}
-
-.second div {
-  background-color:#CD921E;
-}
-
-@keyframes text-animation {
-  0% {margin-top: 0;}
-  10% {margin-top: 0;}
-  20% {margin-top: -5.30rem;}
-  30% {margin-top: -5.30rem;}
- 
-}
-
-@media screen and (max-width: 769px){ 
-    @keyframes text-animation {
-        0% {margin-top: 0;}
-        10% {margin-top: 0;}
-        20% {margin-top: -4.2rem;}
-        30% {margin-top: -4.2rem;}
-        90% {margin-top: 0;}
-        100% {margin-top: 0;}
-      }
-
-      .second div {
-        background-color:#CD921E;
-        font-size:medium;
-      }
-}
-
-.presentations {
-    text-align: center; /* Ensures text inside the div is centered */
-    max-width: 70%; /* Sets a maximum width for the div */
-    margin: 0 auto; /* Centers the div itself within its parent */
-}
-
-.flex {
+.centerTitre{
     display: flex;
+    justify-content: center;
 }
 
-.justify-between {
-    justify-content: space-between;
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
-
-.items-center {
+.card-title{
+    display: flex;
     align-items: center;
+    gap: 6px;
 }
 
-.gap-comp {
-    gap: 1rem; /* Ajustez selon vos besoins */
+.card{
+    min-height: 156px;
 }
 
+.link_nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    
+}
+
+.link_nav a{
+    text-decoration: none;
+}
+
+.gapping{
+    gap: 100px;
+}
